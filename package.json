@@ -1,0 +1,27 @@
+{
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "A simple mini message board using Express and EJS",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "message-board",
+    "mini-app"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        Welcome to the mini message board
+    </header>
+    <main>
+        <% messages.forEach((message, index)=> { %>
+            <div class="message">
+                <div class="message-header">
+
+                    <div class="avatar" style="background-color: <%= getAvatarColor(message.user) %>">
+                        <%= getUserInitials(message.user) %>
+                    </div>
+
+                    <span class="message-user">
+                        <%= message.user %>
+                    </span>
+                </div>
+                <div class="message-content">
+                    <p class="message-text">
+                        <%= message.text %>
+                    </p>
+                    <p class="message-date">
+                        <%= formatDate(message.date) %>
+                    </p>
+                </div>
+            </div>
+            <% }) %>
+
+                <%- include('form') %>
+
+    </main>
+    <footer></footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
