@@ -2,11 +2,11 @@
   "name": "mini-message-board",
   "version": "1.0.0",
   "description": "A simple mini message board using Express and EJS",
-  "main": "index.js",
+  "main": "app.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
